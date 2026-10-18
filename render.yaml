@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: monsaas-demo
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: API_TOKEN
+        generateValue: true
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: SAASH_WEBHOOK_URL
+        sync: false
+      - key: SAASH_URL
+        sync: false
+      - key: SAASH_API_KEY
+        sync: false

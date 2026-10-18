@@ -1,0 +1,12 @@
+{
+  "name": "monsaas-demo",
+  "version": "1.0.0",
+  "description": "SaaS d'exemple connecté à SaaS H",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
