@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MonSaaS</title>
+<style>
+  :root{--p:#2563eb;--bg:#f5f7fb;--card:#fff;--line:#dde3ee;--ok:#2e7d32;--down:#c62828;--warn:#b78103;--muted:#5b6475}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:#1b2030;line-height:1.4}
+  header{background:var(--p);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+  header b{font-size:18px}
+  main{max-width:640px;margin:0 auto;padding:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+  h2{margin:0 0 10px;font-size:17px}
+  label{display:block;font-size:13px;color:var(--muted);margin:10px 0 4px}
+  input,textarea{width:100%;padding:10px;border:1px solid #b8c1d3;border-radius:8px;font:inherit}
+  button{background:var(--p);color:#fff;border:0;border-radius:999px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer;margin:10px 8px 0 0}
+  button.o{background:transparent;color:var(--p);border:1px solid var(--p)}
+  button:disabled{opacity:.5}
+  .banner{background:#fff4d6;color:#7a5a00;padding:10px 16px;text-align:center;font-size:14px}
+  .err{color:var(--down);font-size:14px;margin-top:8px;min-height:18px}
+  .ok{color:var(--ok);font-weight:600}.down{color:var(--down);font-weight:600}.warn{color:var(--warn);font-weight:600}
+  .small{font-size:12.5px;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  td,th{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line);vertical-align:top}
+  .log{font-family:ui-monospace,Menlo,monospace;font-size:12px;border-bottom:1px solid var(--line);padding:3px 0}
+</style>
+</head>
+<body>
+<header><b>MonSaaS</b><span id="who"></span></header>
+<div id="banner" class="banner" hidden>Maintenance en cours : le service est temporairement indisponible.</div>
+<main id="view"></main>
+<script src="/app.js"></script>
+</body>
+</html>
